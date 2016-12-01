@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="text-left col-sm-6 col-md-6 col-lg-6 col-xl-6 no-space" style="padding: 0px 10px;">
+        <div class="thumbnail">
+            <div class="caption" style="padding:20px;">
+                <h5 class="post-caption text-center">Input</h5>
+                <p style="font-size:14px;">
+                    <form name="myform" ng-submit="submit(inputString)" method="POST">
+				      <div class="row">
+				        <div class="col-md-12">
+				          <div class="form-group" ng-class="{'has-error': hasError}">
+				          	<label class="control-label" ng-if="hasError" for="inputString">last character must be 0</label>
+				            <textarea rows="6" cols="60" name="inputString" id="inputString" placeholder="Input" ng-model="inputString" class="form-control"></textarea>
+				          </div>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="col-md-12 text-right">
+				          <input class="btn btn-success btn-sm" type="submit" id="submit" value="Submit" />
+				        </div>
+				      </div>
+				    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-left col-sm-6 col-md-6 col-lg-6 col-xl-6 no-space" style="padding: 0px 10px;">
+    	<div class="thumbnail">
+	    	<div class="caption" style="padding:20px;">
+	          <h5 class="post-caption">Output</h5>
+	          <p><pre>{{response.response}}</pre></p>
+	         </div>
+	    </div>
+    </div>
+
+    
+</div>
