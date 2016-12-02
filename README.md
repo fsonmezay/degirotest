@@ -6,4 +6,4 @@ run with
 $ mvn spring-boot:run
 ```
 
-command
+command and go to `http://localhost:8080/`
